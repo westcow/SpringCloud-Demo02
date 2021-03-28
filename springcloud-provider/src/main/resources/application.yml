@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: springcloud-provider
+  datasource:
+    druid:
+      mysql:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost/own_mysql?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+        username: root
+        password:
+mybatis:
+  mapper-locations: classpath:com/bjb/com.bjb.dao/mapper/*.xml
