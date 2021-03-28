@@ -18,6 +18,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Student implements Serializable {
     private Integer sId;
-    private String student;
+    private String studentName;
     private String password;
 }
