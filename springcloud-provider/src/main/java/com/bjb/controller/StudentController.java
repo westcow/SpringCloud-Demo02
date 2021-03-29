@@ -23,7 +23,7 @@ public class StudentController {
     private StudentService studentService;
 
     @GetMapping("/queryStudentById/{sId}")
-    public Student queryStudentById(@PathVariable Integer sId) {
+    public Student queryStudentById(@PathVariable("sId") Integer sId) {
         return studentService.queryStudentById(sId);
     }
 
