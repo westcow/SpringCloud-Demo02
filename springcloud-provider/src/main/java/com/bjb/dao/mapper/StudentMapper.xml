@@ -4,4 +4,28 @@
     <select id="queryStudentById" parameterType="java.lang.Integer" resultType="entity.Student">
         select * from student where sId= #{sId, jdbcType=INTEGER}
     </select>
+
+    <insert id="insertStudent" parameterType="entity.Student">
+        <selectKey keyProperty="sId" order="AFTER" resultType="java.lang.Integer">
+            SELECT
+            LAST_INSERT_ID()
+        </selectKey>
+        insert into student
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="studentName != null">
+                studentName,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="studentName != null">
+                #{studentName,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null">
+                #{password,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
 </mapper>

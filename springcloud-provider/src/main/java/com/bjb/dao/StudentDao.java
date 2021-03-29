@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface StudentDao {
 
     public Student queryStudentById(Integer sId);
+
+    public int insertStudent(Student student);
 }

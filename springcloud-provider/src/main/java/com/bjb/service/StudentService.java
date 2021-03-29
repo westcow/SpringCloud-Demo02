@@ -12,4 +12,6 @@ import entity.Student;
 public interface StudentService {
 
     public Student queryStudentById(Integer sId);
+
+    public int addStudent(Student student);
 }

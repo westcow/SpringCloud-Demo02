@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-api</module>
         <module>springcloud-provider</module>
+        <module>springcloud-consumer-student-80</module>
     </modules>
 
     <!--打包方式 pom-->
