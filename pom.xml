@@ -12,6 +12,8 @@
         <module>springcloud-provider</module>
         <module>springcloud-consumer-student-80</module>
         <module>springcloudeureka_7001</module>
+        <module>springcloudeureka_7002</module>
+        <module>springcloudeureka_7003</module>
     </modules>
 
     <!--打包方式 pom-->
