@@ -20,7 +20,7 @@ eureka:
     register-with-eureka: true #是否将自己注册到注册中心上
     fetch-registry: true #是否从Eureka上获取注册信息
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: springcloud-provider-8001 #修改Eureka上的默认描述信息
 #    prefer-ip-address: true #使用ip进行注册
